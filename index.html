@@ -1,37 +1,47 @@
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Get It Done </title>
-      <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    <div class="container">
-      <h1> Get It Done </h1>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
 
-      <p>
-        <label for="new-task">New Action Item</label><input id="new-task" type="text"><button>Add</button>
-      </p>
-      
-      <h3>Tasks</h3>
-      <ul id="incomplete-tasks">
-        <li>
-          <input type="checkbox">
-          <label>Pay Bills</label>
-          <input type="text">
-          <button class="edit">Edit</button>
-          <button class="delete">Delete</button>
-          </li>
-        <li class="editMode">
-          <input type="checkbox">
-          <label>Go Shopping</label>
-          <input type="text" value="Go Shopping">
-          <button class="edit">Edit</button>
-          <button class="delete">Delete</button></li>
-          </ul> 
+<body>
+    <div class="container">
+        <h1> Get It Done </h1>
+
+        <form>
+            <p>
+                <label for="new-task">New Action Item</label>
+                <input id="new-task" type="text">
+
+                <button type="submit" id="submit"> Add</button>
+            </p>
+
+            <h3>Tasks</h3>
+            <ul id="incomplete-tasks">
+                <li>
+                    <input type="checkbox">
+                    <label>Pay Bills</label>
+                    <input type="text">
+                    <button class="edit">Edit</button>
+                    <button class="delete">Delete</button>
+                </li>
+                <li class="editMode">
+                    <input type="checkbox">
+                    <label>Go Shopping</label>
+                    <input type="text" value="Go Shopping">
+                    <button class="edit">Edit</button>
+                    <button class="delete">Delete</button></li>
+            </ul>
+
+        </form>
     </div>
 
-    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="script.js"></script>
 
-  </body>
+</body>
+
 </html>
